@@ -12,146 +12,50 @@
 <body>
 
     <style>
-
-        /* Layout Dasar Navigasi (Desktop) */
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li a {
+    /* Tampilan awal tombol VIDEO */
+.external-link {
+    padding: 6px 14px;
+    border: 1px solid #00d2ff;
+    border-radius: 20px;
+    background: transparent; /* Memastikan background transparan */
+    color: #fff;              /* Warna teks disesuaikan dengan tema gelap */
+    transition: all 0.3s ease;
     text-decoration: none;
-    color: #fff; /* Sesuaikan warna teks Anda */
 }
 
-/* Tombol Hamburger Default Disembunyikan di Desktop */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
+/* Efek saat cursor mengarah ke tombol VIDEO */
+.external-link:hover {
+    background: transparent;              /* Menghilangkan background saat hover */
+    color: #00d2ff !important;            /* Mengubah warna teks saja */
+    border-color: #00d2ff;                /* Mempertahankan atau mengubah warna garis tepi */
+    box-shadow: 0 0 12px rgba(0, 210, 255, 0.5); /* Efek bercahaya halus tanpa background solid */
 }
-
-.hamburger span {
-    height: 3px;
-    width: 100%;
-    background-color: #fff; /* Warna garis hamburger */
-    border-radius: 3px;
-    transition: all 0.3s ease;
-}
-
-/* Style khusus Layar HP (Maksimal Lebar 768px) */
-@media screen and (max-width: 768px) {
-    .hamburger {
-        display: flex; /* Tampilkan tombol hamburger */
-    }
-
-    .nav-links {
-        display: none; /* Sembunyikan menu desktop */
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background: rgba(0, 0, 0, 0.9); /* Sesuai gaya 'glass' Anda */
-        backdrop-filter: blur(10px);
-        padding: 20px 0;
-        gap: 15px;
-    }
-
-    /* Klas untuk menampilkan menu saat hamburger diklik */
-    .nav-links.active {
-        display: flex;
-    }
-}
-
-   .btn-video {
-    /* Gradien Hijau Emerald ke Hijau Neon */
-    background: linear-gradient(135deg, #059669, #10b981);
-    color: #ffffff;
-    border: none;
-    padding: 10px 22px;
-    border-radius: 50px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    cursor: pointer;
-    /* Efek pendaran awal hijau lembut */
-    box-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
-    transition: all 0.3s ease;
-    animation: pulse-green 2s infinite;
-}
-
-.btn-video:hover {
-    /* Efek terangkat & membesar */
-    transform: translateY(-3px) scale(1.05);
-    /* Cahaya pendaran hijau neon yang lebih terang */
-    box-shadow: 0 0 22px rgba(52, 211, 153, 0.8);
-    /* Balik arah gradien saat di-hover */
-    background: linear-gradient(135deg, #10b981, #34d399);
-}
-
-/* Animasi Denyut Cahaya Hijau */
-@keyframes pulse-green {
-    0% {
-        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6);
-    }
-    70% {
-        box-shadow: 0 0 0 12px rgba(16, 185, 129, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
-    }
-}
-
-</style>
-       
     </style>
 </head>
 <body>
     
 
+    <!-- Header -->
     <header class="glass">
-    <nav>
-        <a href="https://www.instagram.com/xedyota/?next=%2F" target="_blank" class="logo">
-            <img src="gambar bahan/logo.png" height="60" alt="Logo">
-        </a>
-
-        <!-- Tombol Hamburger (Muncul hanya di HP) -->
-        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <!-- Daftar Menu -->
-        <ul class="nav-links" id="nav-links">
-            <li><a href="dayone.html">DAY1</a></li>
-            <li><a href="daytwo.html">DAY2</a></li>
-            <li><a href="daythree.html">DAY3</a></li>
-            <li><a href="dayfour.html">DAY4</a></li>
-            <li><a href="dayfive.html">DAY5</a></li>
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSchoLkEpuQT4kZF7urFQg8taxPOz1GVXxRBhD7XAeIumfTxVg/viewform?usp=header"" target="_blank" class="external-link">attendance list</a></li>
-            <li><a href="video.html" target="_blank"><button class="btn-video">VIDEO</button></a></li>
-        </ul>
-    </nav>
-</header>
-
+        <nav>
+            <a href="https://www.instagram.com/xibravestone_/" target="_blank" class="logo">
+                <img src="gambar bahan/logo.png" height="60">
+                </svg>
+                
+            </a>
+            <ul class="nav-links">
+                <li><a href="dayone.html">DAY1</a></li>
+                <li><a href="daytwo.html">DAY2</a></li>
+                <li><a href="daythree.html">DAY3</a></li>
+                <li><a href="dayfour.html">DAY4</a></li>
+                <li><a href="dayfive.html">DAY5</a></li>
+                <li><a href="weektwo.html" target="_blank">VIDEO</a></li></ul>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSchoLkEpuQT4kZF7urFQg8taxPOz1GVXxRBhD7XAeIumfTxVg/viewform?usp=publish-editor" target="_blank" class="external-link"><button>ATTENDANCE SHEET</button></a></li>
+</ul>
+            </ul>
+        </nav>
+        
+    </header>
 
     <img src="image/1.jpg" width="100%;" height="auto;">
 
@@ -159,14 +63,6 @@ header nav {
 function myFunction(x) {
   x.classList.toggle("change");
 }
-
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
-
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-
 </script>
 
 </body>
